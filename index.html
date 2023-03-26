@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="src/css/style.css" />
+	</head>
+	<body>
+		<section class="users">
+			<div class="container">
+				<button class="open-form button mt-20">new user</button>
+				<div class="modal reg-form-modal">
+					<div class="modal-content">
+						<button class="close">X</button>
+
+						<form action="#" id="register-user">
+							<input type="hidden" id="user_id" />
+							<div class="form-row">
+								<input
+									type="text"
+									id="user_name"
+									placeholder="user name"
+									required
+								/>
+								<label for="user_name">Enter User Name</label>
+								<span class="error-message"></span>
+							</div>
+							<div class="form-row">
+								<input
+									type="text"
+									id="user_surname"
+									placeholder="user surname"
+									required
+								/>
+								<label for="user_surname">Enter User Surname</label>
+								<span class="error-message"></span>
+							</div>
+							<div class="form-row">
+								<input
+									type="number"
+									id="user_phone"
+									placeholder="phone number"
+									required
+								/>
+								<label for="user_phone">Enter phone number</label>
+
+								<span class="error-message"></span>
+							</div>
+							<div class="form-row">
+								<input
+									type="number"
+									id="user_personal-id"
+									placeholder="personal id"
+									required
+								/>
+								<label for="user_personal-id">Enter personal id</label>
+
+								<span class="error-message"></span>
+							</div>
+							<div class="form-row">
+								<input
+									type="email"
+									id="user_email"
+									placeholder="email"
+									required
+								/>
+								<label for="user_email">Enter Email</label>
+								<span class="error-message"></span>
+							</div>
+							<div class="form-row">
+								<input
+									type="text"
+									id="user_zip-code"
+									placeholder="zip code"
+									required
+								/>
+								<label for="user_zip-code">Enter zip code</label>
+
+								<span class="error-message"></span>
+							</div>
+							<div class="form-row gender-block">
+								<p>Select Gender</p>
+								<div>
+									<label for="male">
+										<input
+											type="radio"
+											id="male"
+											placeholder="gender"
+											name="gender"
+											value="male"
+										/>
+										<span>male</span>
+									</label>
+									<label for="female">
+										<input
+											type="radio"
+											id="female"
+											placeholder="gender"
+											name="gender"
+											value="female"
+										/>
+										<span>female</span>
+									</label>
+									<label for="other">
+										<input
+											type="radio"
+											id="other"
+											placeholder="gender"
+											name="gender"
+											value="other"
+											required
+										/>
+										<span>other</span>
+									</label>
+								</div>
+
+								<span class="error-message"></span>
+							</div>
+							<button type="submit" class="button submit-form">
+								submit form
+							</button>
+						</form>
+					</div>
+				</div>
+
+				<table>
+					<thead>
+						<tr>
+							<th>id</th>
+							<th>first name</th>
+							<th>last name</th>
+							<th>email</th>
+							<th>id number</th>
+							<th>phone</th>
+							<th>zip code</th>
+							<th>gender</th>
+							<th>actions</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</section>
+
+		<script src="src/js/app.js"></script>
+	</body>
+</html>
